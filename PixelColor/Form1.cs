@@ -42,8 +42,7 @@ namespace PixelColor
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                string fileName = openFileDialog1.FileName;
-                ColorPixel.AddColors(fileName);
+                ColorPixel.AddColors(openFileDialog1.FileName);
             }
         }
     }
