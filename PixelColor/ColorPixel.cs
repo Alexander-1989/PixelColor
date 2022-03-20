@@ -172,7 +172,7 @@ namespace PixelColor
 
         public static int ColorToInt(Color color)
         {
-            return (color.A << color.R << 16 | color.G << 8 | color.B);
+            return color.A << 24 | color.R << 16 | color.G << 8 | color.B;
         }
 
         public static string GetNameByHex(string hex)
